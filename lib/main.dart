@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:technicaltestform/src/pages/create_user_page.dart';
+import 'package:technicaltestform/src/pages/splash_page.dart';
 import 'package:technicaltestform/src/pages/user_page.dart';
 import 'package:technicaltestform/src/pages/users_page.dart';
 import 'package:technicaltestform/src/pages/add_address_page.dart';
@@ -22,8 +23,9 @@ class MyApp extends StatelessWidget {
                 InputDecorationTheme(border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.0)))),
         title: 'Technical test',
         //rutas de uso
-        initialRoute: 'users',
+        initialRoute: 'splash',
         routes: {
+          'splash'               : (BuildContext context) => SplashScreen(),
           'users'               : (BuildContext context) => UsersPage(),
           'create_user'         : (BuildContext context) => CreateUser(),
           'user'                : (BuildContext context) => UserPage(),
